@@ -1,0 +1,89 @@
+body {
+	font-family: sans-serif;
+	background: #384047;
+	
+}
+h1 {
+	color: #fff;
+	text-align: center
+}
+
+
+ul {
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 100%;
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	padding: 4px;
+	background:rgba(20, 20, 20, .95);
+	margin:20px;
+	
+}
+ul li img {
+	display: block;
+}
+a {
+	text-decoration: none;
+
+}
+
+
+img {
+	width: 400px;
+	height: 300px;
+		
+}
+/*===============================================================================
+
+Animation setting on Hover
+
+================================================================================*/
+
+li:hover{
+	animation-name: example;
+	-webkit-animation-name: example;  /*Chrome, Safari, Opera */
+
+	  animation-duration: 1.0s;
+	 animation-direction: alternate-reverse ;
+	 animation-iteration-count: infinite;
+	  }
+/*================================================================================
+KEYFRAMES OF WHAT HAS TO DO THE ANIMATION
+
+==================================================================================*/
+@keyframes example {
+	0% {
+		transform: scale(1.4);
+  }
+  
+
+  100% {
+	   transform: scale(1.5);
+  }
+
+}
+
+/*=============================================================
+SEARCHBOX 
+=============================================================*/
+.searchbox
+ {
+	text-align: center;
+	margin: 30px 0 40px 0;
+}
+.search {
+	width: 50%;
+	height: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.search:focus {
+	border: greenyellow solid .2em;
+}
