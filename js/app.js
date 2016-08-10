@@ -66,3 +66,23 @@ function search() {
     }
 
 }
+/*==========================================================================
+input
+============================================================================*/
+$("input").bind("mouseup", function(e){
+  var $input = $(this),
+      oldValue = $input.val();
+
+  if (oldValue == "") return;
+
+  // When this event is fired after clicking on the clear button
+  // the value is not cleared yet. We have to wait for it.
+  setTimeout(function(){
+    var newValue = $input.val();
+
+    if (newValue == ""){
+      // Gotcha
+      $input.trigger("cleared");
+    }
+  }, 1);
+});
