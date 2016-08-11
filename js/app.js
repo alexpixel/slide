@@ -54,13 +54,14 @@ function search() {
     var a = $('a');
     for (var i = 0; i < li.length; i++) {
         a = li[i];
-        var text = a.innerHTML.toUpperCase().trim();
+        var text = a.innerHTML.toUpperCase();
         for(var f = 0; f < filter.length; f++) {
             if (text.indexOf(filter[f]) > -1 ) {    
                 li[i].style.display = '';
-              //  break; // don't need further matches
+                //break; // don't need further matches
             } else {
                 li[i].style.display = 'none';
+                
             }
         }
     }
@@ -69,20 +70,6 @@ function search() {
 /*==========================================================================
 input
 ============================================================================*/
-$("input").bind("mouseup", function(e){
-  var $input = $(this),
-      oldValue = $input.val();
-
-  if (oldValue == "") return;
-
-  // When this event is fired after clicking on the clear button
-  // the value is not cleared yet. We have to wait for it.
-  setTimeout(function(){
-    var newValue = $input.val();
-
-    if (newValue == ""){
-      // Gotcha
-      $input.trigger("cleared");
-    }
-  }, 1);
-});
+// $('input').keydown(function() {
+//     $('input').val('');
+// })
