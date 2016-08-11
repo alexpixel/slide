@@ -60,17 +60,44 @@ function search() {
             for(var f = 0; f < filter.length; f++) {
                 if (text.indexOf(filter[f]) > -1 ) {    
                 li[i].style.display = '';
-                //break; // don't need further matches
+                // break; // don't need further matches
                 } else {
                 li[i].style.display = 'none';            
                 }
             }
     }
 }
+ 
 
-function myFunction() {
-    var input = $('.search'); 
-    input.val('').trigger(KeyboardEventInit)
-};
 
-//  $('#myInput').val('')
+// })
+ 
+   
+
+function myfunction() {
+// var evt = document.createEvent( 'KeyboardEvent' );
+
+// // Init the options
+// evt.initKeyEvent(
+//              "keypress",        //  the kind of event
+//               true,             //  boolean "can it bubble?"
+//               true,             //  boolean "can it be cancelled?"
+//               null,             //  specifies the view context (usually window or null)
+//               false,            //  boolean "Ctrl key?"
+//               false,            //  boolean "Alt key?"
+//               false,            //  Boolean "Shift key?"
+//               false,            //  Boolean "Meta key?"
+//                8,               //  the keyCode
+//                0);              //  the charCode
+
+// Dispatch the event on the element
+//  var ek = $('#myInput');
+// ek.dispatchEvent( evt );
+ $('#myInput').val('');
+
+    
+        // var e = jQuery.Event('keydown');
+        // e.which = 8;
+        // $.trigger(e);
+
+}
