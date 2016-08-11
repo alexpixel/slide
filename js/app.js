@@ -67,37 +67,4 @@ function search() {
             }
     }
 }
- 
 
-
-// })
- 
-   
-
-function myfunction() {
-// var evt = document.createEvent( 'KeyboardEvent' );
-
-// // Init the options
-// evt.initKeyEvent(
-//              "keypress",        //  the kind of event
-//               true,             //  boolean "can it bubble?"
-//               true,             //  boolean "can it be cancelled?"
-//               null,             //  specifies the view context (usually window or null)
-//               false,            //  boolean "Ctrl key?"
-//               false,            //  boolean "Alt key?"
-//               false,            //  Boolean "Shift key?"
-//               false,            //  Boolean "Meta key?"
-//                8,               //  the keyCode
-//                0);              //  the charCode
-
-// Dispatch the event on the element
-//  var ek = $('#myInput');
-// ek.dispatchEvent( evt );
- $('#myInput').val('');
-
-    
-        // var e = jQuery.Event('keydown');
-        // e.which = 8;
-        // $.trigger(e);
-
-}
