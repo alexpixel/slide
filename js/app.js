@@ -29,7 +29,8 @@ $overlay.click(function() {
 $overlay.hide();
 
 })
-*/
+*;
+
 
 /*=======================================================
 LIGHTBOX2 (JQUERY PLUGIN)
@@ -42,34 +43,34 @@ $(document).ready(function() {
       'wrapAround': true,
       'positionFromTop': 200,
         });
+         
 });  
 /*=========================================================
 function FOR SEARCH
 ===========================================================*/
 //   
 function search() {
-
+     
     var filter =  $('input').val().toUpperCase().split(' ');
     var li = $('li');
     var a = $('a');
     for (var i = 0; i < li.length; i++) {
         a = li[i];
         var text = a.innerHTML.toUpperCase();
-        for(var f = 0; f < filter.length; f++) {
-            if (text.indexOf(filter[f]) > -1 ) {    
+            for(var f = 0; f < filter.length; f++) {
+                if (text.indexOf(filter[f]) > -1 ) {    
                 li[i].style.display = '';
                 //break; // don't need further matches
-            } else {
-                li[i].style.display = 'none';
-                
+                } else {
+                li[i].style.display = 'none';            
+                }
             }
-        }
     }
-
 }
-/*==========================================================================
-input
-============================================================================*/
-// $('input').keydown(function() {
-//     $('input').val('');
-// })
+
+function myFunction() {
+    var input = $('.search'); 
+    input.val('').trigger(KeyboardEventInit)
+};
+
+//  $('#myInput').val('')
