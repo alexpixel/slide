@@ -45,6 +45,12 @@ $(document).ready(function() {
         });
          
 });  
+
+// Use an event listener to assign the 'clear' function to the click event on the button
+window.onload = function() {
+  document.getElementById ("clearButton").addEventListener("click",clear);
+}
+
 /*=========================================================
 function FOR SEARCH
 ===========================================================*/
@@ -67,4 +73,20 @@ function search() {
             }
     }
 }
+/*============================================================
+FUNCTION FOR CLEAR SEARCH
+==============================================================*/
 
+  function clear() {
+    // Select the 'myInput' search box, and set it's value to an empty String
+    document.getElementById("myInput").value = "";
+    // Call seach, which should reset the result list
+    search();
+  }  
+
+  function showButton() {
+
+    var inbar = document.getElementById("clearButton");
+    inbar.style.visibility = "show";
+    console.log('dsd');
+}

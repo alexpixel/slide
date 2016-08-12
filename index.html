@@ -8,13 +8,12 @@
 
 <body>
 	<h1>Image Gallery</h1>
-	<div class="searchbox">
-		<div>
-		<input type="text" placeholder="Search"  class="search" onkeyup="search()" id="myInput" val="">
-			<input type="button">
-		</div>
- 	
-	
+	<div class="searchbox">	
+
+		<input type="text" placeholder="Search"  class="search" onkeyup="search()" id="myInput" val=""
+		onclick='showButton()' >
+
+		<input type="button" click="clear()" id="clearButton" value="X" />
  	</div>	
 	 	
 	<ul id="imageGallery">
