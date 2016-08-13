@@ -99,16 +99,15 @@ SEARCHBOX
 
 
 #clearButton { 
-    background-image: url('../images/close.png'); 
+    background-image: url('../images/close-512.png'); 
     background-size: contain ;
     background-repeat:  no-repeat;
     width: 40px;
     height: 40px;
-    background-color: rgba(136, 136, 136, 0.79);
     border: none;
     position: fixed;
     margin-left: -50px;
-    margin-top: 8.5px;
+    margin-top: 10px;
 }
 
     
