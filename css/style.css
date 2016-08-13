@@ -96,28 +96,23 @@ SEARCHBOX
 	border: greenyellow solid .2em;
 }
 
-.right-inner-addon {
-    display: inline-block;
-    position: relative;
-    width: 10px;
-     
-}
+
 
 #clearButton { 
-    background-image: url('../images/close.svg'); 
+    background-image: url('../images/close.png'); 
     background-size: contain ;
     background-repeat:  no-repeat;
     width: 40px;
     height: 40px;
-    background-color: rgba(29, 60, 229, 0);
+    background-color: rgba(136, 136, 136, 0.79);
     border: none;
-    position: absolute;
-    margin-top:8px;
-    margin-left: -45px;
-    
+    position: fixed;
+    margin-left: -50px;
+    margin-top: 8.5px;
 }
 
     
+
 
 
 
