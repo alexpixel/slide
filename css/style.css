@@ -71,6 +71,12 @@ KEYFRAMES OF WHAT HAS TO DO THE ANIMATION
 /*=============================================================
 SEARCHBOX 
 =============================================================*/
+.search::-ms-clear {
+	display: none;
+}
+
+
+
 .searchbox
  {
 	text-align: center;
@@ -83,24 +89,35 @@ SEARCHBOX
 	font-size: 1.5em;
 	text-align: center;
 	border-radius: 5px;
-	
 
 }
 
 .search:focus {
 	border: greenyellow solid .2em;
-	
 }
 
-.search::-ms-clear {
-	display: none;
+.right-inner-addon {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+     
 }
 
-input[ type="button"] {
-	margin-left: -60px;
-	height: 35px;
-	width: 50px;
-	background: transparent;
-	border: 0;
-	border-radius: 50%;
-	}
+#clearButton { 
+    background-image: url('../images/close.svg'); 
+    background-size: contain ;
+    background-repeat:  no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(29, 60, 229, 0);
+    border: none;
+    position: absolute;
+    margin-top:8px;
+    margin-left: -45px;
+    
+}
+
+    
+
+
+

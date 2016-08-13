@@ -3,17 +3,20 @@
 <head>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
 	<title>Image Gallery</title>
+	
 </head>
 
 <body>
 	<h1>Image Gallery</h1>
-	<div class="searchbox">	
-
+	<div class="searchbox" id="searchbox">	
+          
 		<input type="text" placeholder="Search"  class="search" onkeyup="search()" id="myInput" val=""
-		onclick='showButton()' >
-
-		<input type="button" click="clear()" id="clearButton" value="X" />
+		onkeydown='showButton()'>
+		
+		<button type="submit" id="clearButton"  click="clear()"> </button>
+        
  	</div>	
 	 	
 	<ul id="imageGallery">
@@ -30,7 +33,6 @@
 		<li><a href="images/chiapas1.jpg" data-lightbox="roadtrip"><img src="images/chiapas1.jpg" alt="oaxaca chamula native custom hat soda street" ></a></li>
 		<li><a href="images/cali.jpg" data-lightbox="roadtrip"><img class="cali" src="images/cali.jpg" alt="los angeles sunset love couple clouds red" ></a></li>
 	</ul>
-    
 	<script src = "js/jquery.min.js"></script>
     <script src = "js/lightbox.js" ></script>
 	<script src="js/app.js" type="text/javascript"></script>

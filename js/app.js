@@ -43,14 +43,15 @@ $(document).ready(function() {
       'wrapAround': true,
       'positionFromTop': 200,
         });
-         
+    
 });  
 
 // Use an event listener to assign the 'clear' function to the click event on the button
 window.onload = function() {
   document.getElementById ("clearButton").addEventListener("click",clear);
 }
-
+     
+ 
 /*=========================================================
 function FOR SEARCH
 ===========================================================*/
@@ -83,10 +84,32 @@ FUNCTION FOR CLEAR SEARCH
     // Call seach, which should reset the result list
     search();
   }  
+/*============================================================
+JQUERY SHOW AND HIDE BUTTON ICON 
+==============================================================*/
 
-  function showButton() {
+$('#clearButton').hide();
 
-    var inbar = document.getElementById("clearButton");
-    inbar.style.visibility = "show";
-    console.log('dsd');
-}
+  //FUNCTION TO SHOW BUTTON WHEN TYPED AND DELETE WHEN CLICK ICON
+    $("#myInput").keypress(function(){
+       $("#clearButton").show().click(function() {
+            $('#clearButton').hide();  
+            });
+});   
+               
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
